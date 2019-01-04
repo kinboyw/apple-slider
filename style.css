@@ -12,18 +12,34 @@ body{ font-size:13px; color:#444444; background:#f2f2f2; }
 .wrapper .window{
   width:920px;
   margin:0 auto;
+  overflow:hidden;
+  box-shadow:0 0 1px 0.5px rgba(0,0,0,0.2);
+  border-radius:0 0 5px 5px;
 }
 .wrapper .images{
+  display:flex;
+  align-items:start;
   height:400px;
   margin:20 0 0 0;
-  overflow:hidden;
+  transition:all 500ms;
+}
+.wrapper .menu{
+  width:920px;
+  height:45px;
+  background: linear-gradient(to bottom, #ffffff 0%,#eaeaea 62%,#eaeaea 62%,#ffffff 100%); 
+  border-top:1px solid rgba(20,20,20.0.5)
 }
 .wrapper .menu>ul{
   display:flex;
   justify-content:center;
-  align-item:center;
+  align-items:center;
 }
 .wrapper .menu>ul>li{
   list-style:none;
-  margin:10px;
+  margin:10px 0 0 0;
+  width:60px;
+  height:35px;
+}
+.wrapper .menu>ul>li.active{
+  outline:1px solid red;
 }
