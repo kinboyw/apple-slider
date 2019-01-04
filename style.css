@@ -1,0 +1,29 @@
+*{margin:0;padding:0}
+*{box-sizing:border-box}
+.clear::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+body{ font-size:13px; color:#444444; background:#f2f2f2; }
+.wrapper{ text-align:center; }
+.wrapper>.title{ font-size:42px; margin:35px; }
+.wrapper>.title>span{ font-weight:900; display:block; }
+.wrapper .window{
+  width:920px;
+  margin:0 auto;
+}
+.wrapper .images{
+  height:400px;
+  margin:20 0 0 0;
+  overflow:hidden;
+}
+.wrapper .menu>ul{
+  display:flex;
+  justify-content:center;
+  align-item:center;
+}
+.wrapper .menu>ul>li{
+  list-style:none;
+  margin:10px;
+}
