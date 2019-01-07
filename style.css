@@ -28,6 +28,7 @@ body{ font-size:13px; color:#444444; background:#f2f2f2; }
   width:920px;
   height:45px;
  /*background: linear-gradient(to bottom, #ffffff 0%,#eaeaea 62%,#eaeaea 62%,#ffffff 100%);*/ 
+ background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 25%,#e1e1e1 62%,#e1e1e1 62%,#e1e1e1 100%,#f6f6f6 100%,#e1e1e1 100%);
   border:1px solid rgba(255,255,255,1);
   border-top:1px solid rgba(0,0,0,0.1);
 }
@@ -50,7 +51,9 @@ body{ font-size:13px; color:#444444; background:#f2f2f2; }
   padding-top:10px;
 }
 
-.wrapper .menu>ul>li.fbar{
+.wrapper .menu>ul>li.fbar>a{
+  display:block;
   width:2px;
+  height:45px;
   background:url(./images/divider.png) no-repeat left;
 }
