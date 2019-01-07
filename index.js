@@ -33,7 +33,7 @@ function fix(n){
   return n =  n % menus.length 
 }
 function getItem(n){
-  return $(`.menu>ul>li.menuitem:nth-child(${n+1})`);
+  return $(`.menuitem:nth-of-type(${n+2})`);
 }
 function active($node){
   $(".menu>ul>li.active").removeClass("active");

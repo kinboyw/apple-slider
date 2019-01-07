@@ -46,10 +46,11 @@ body{ font-size:13px; color:#444444; background:#f2f2f2; }
 .wrapper .menu>ul>li.menuitem>a{
   display:block;
   background:url(./images/divider.png) no-repeat right;
-  height:35px;
-  margin-top:10px;
+  height:45px;
+  padding-top:10px;
 }
+
 .wrapper .menu>ul>li.fbar{
   width:2px;
-  background:url(./images/divider.png) no-repeat right;
+  background:url(./images/divider.png) no-repeat left;
 }
