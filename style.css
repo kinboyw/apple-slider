@@ -5,6 +5,7 @@
   display:block;
   clear:both;
 }
+li{list-style:none;}
 body{ font-size:13px; color:#444444; background:#f2f2f2; }
 .wrapper{ text-align:center; }
 .wrapper>.title{ font-size:42px; margin:35px; }
@@ -26,20 +27,29 @@ body{ font-size:13px; color:#444444; background:#f2f2f2; }
 .wrapper .menu{
   width:920px;
   height:45px;
-  background: linear-gradient(to bottom, #ffffff 0%,#eaeaea 62%,#eaeaea 62%,#ffffff 100%); 
-  border-top:1px solid rgba(20,20,20.0.5)
+ /*background: linear-gradient(to bottom, #ffffff 0%,#eaeaea 62%,#eaeaea 62%,#ffffff 100%);*/ 
+  border:1px solid rgba(255,255,255,1);
+  border-top:1px solid rgba(0,0,0,0.1);
 }
 .wrapper .menu>ul{
   display:flex;
   justify-content:center;
   align-items:center;
 }
-.wrapper .menu>ul>li{
-  list-style:none;
-  margin:10px 0 0 0;
+.wrapper .menu>ul>li.menuitem{
   width:60px;
-  height:35px;
+  height:45px;
 }
-.wrapper .menu>ul>li.active{
-  outline:1px solid red;
+.wrapper .menu>ul>li.menuitem.active{
+  background:url(./images/active_bg.png) no-repeat;
+}
+.wrapper .menu>ul>li.menuitem>a{
+  display:block;
+  background:url(./images/divider.png) no-repeat right;
+  height:35px;
+  margin-top:10px;
+}
+.wrapper .menu>ul>li.fbar{
+  width:2px;
+  background:url(./images/divider.png) no-repeat right;
 }
